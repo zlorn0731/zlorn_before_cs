@@ -21,15 +21,15 @@
 💠 자바 프로그래밍	IntelliJ로 구구단 출력기 완성 + 콘솔 입출력 연습  
 🐞 디버깅 스킬	이벤트 연결 오류 해결 + 직접 해결 경험  
 📁 정리 습관	바탕화면에 연습 폴더 만들고 정리 시작  
-#### 정리 습관
-📂 바탕화면
-└── 📁 지안_코딩연습
-    ├── 📁 자바_기초
-    │   └── GugudanProject (IntelliJ로 만든 프로젝트 폴더 전체 복사)
-    ├── 📁 윈도우프로그래밍
-    │   └── WinFormAddExample
-    └── 📁 리눅스_명령어정리
-- WindowPrograming | 20250806.java 
+#### 정리 습관  
+📂 바탕화면  
+└── 📁 지안_코딩연습  
+    ├── 📁 자바_기초  
+    │   └── GugudanProject (IntelliJ로 만든 프로젝트 폴더 전체 복사)  
+    ├── 📁 윈도우프로그래밍  
+    │   └── WinFormAddExample  
+    └── 📁 리눅스_명령어정리  
+- WindowPrograming | 20250806.java   
 - Java | 20250806.java
 
 ## 🛠 기술 스택
