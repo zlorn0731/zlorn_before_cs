@@ -29,3 +29,5 @@
 
 ## 📫 연락처
 - Email: zlorn@naver.com
+- Phone: 010-6346-1081
+- Gmail: qkrwldks0731@gmail.com
