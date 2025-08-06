@@ -1,0 +1,76 @@
+# 🎮 숫자 맞히기 게임 (Guess the Number)
+
+## 📌 개요
+- 컴퓨터가 1~100 사이의 랜덤한 숫자를 정하고,  
+  사용자가 맞힐 때까지 입력해서 정답을 찾는 콘솔 게임입니다.
+
+## 🧠 사용한 개념
+- Random 클래스
+- Scanner를 이용한 입력 처리
+- while 반복문
+- if-else 조건문
+- 시도 횟수 카운트
+
+## 💡 실행 예시
+import java.util.Random;
+import java.util.Scanner;
+
+public class NumberGuessGame {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+
+        int answer = rand.nextInt(100)+1; // 1 ~ 100 사이 랜덤 숫자
+        int guess = 0;
+        int tries = 0;
+
+        System.out.println("숫자 맞히기 게임 시작!");
+
+        while(guess != answer) {
+            System.out.println("1부터 100 사이 숫자를 입력하세요: ");
+            guess = sc.nextInt();
+            tries++;
+
+            if(guess < answer) {
+                System.out.println("너무 작습니다!\n");
+            } else if(guess > answer) {
+                System.out.println("너무 큽니다!\n");
+            } else {
+                System.out.println("정답입니다! 총 시도 횟수: " + tries + "회");
+            }
+        }
+        sc.close();
+    }
+}
+####-----------------------------------------------------------------------------------------------------------
+# 🎮 구구단 출력기 (Gugudan Console App)
+
+## 📌 개요
+- 사용자가 입력한 단(2~9)에 대해  
+  해당 구구단을 출력하는 자바 콘솔 프로그램입니다.
+
+## 🧠 사용한 개념
+- Scanner를 이용한 사용자 입력 처리
+- for 반복문
+- 정수형 변수 및 출력 형식화
+
+## 💡 실행 예시
+import java.util.Scanner;
+
+public class Gugudan {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("출력할 단을 입력하세요: ");
+        int dan = sc.nextInt();
+
+        System.out.println("====" + dan + "단====");
+        for(int i=1; i<=9; i++) {
+            System.out.println(dan + " x " + i + "= " + (dan * i));
+        }
+        sc.close();
+    }
+}
+
+## 작업 공간: intellij IDEA 2025.2
+## 🗓️ 작업일: 2025-08-06 박지안
