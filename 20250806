@@ -1,0 +1,48 @@
+# 🖥️ WinForms - 숫자 더하기 예제
+
+## 📌 개요
+Visual Studio와 C#을 사용해 간단한 윈도우 폼 애플리케이션을 만들었습니다.  
+두 개의 숫자를 입력받아 버튼을 누르면 합계를 출력하는 프로그램입니다.
+
+## 🧩 사용한 기술
+- Visual Studio 2022 (Community Edition)
+- C# (.NET Framework)
+- Windows Forms (WinForms)
+
+## 🎨 폼 구성
+
+| 컨트롤 | 이름(Name)     | 설명 |
+|--------|----------------|------|
+| TextBox | `txtNumber1`   | 첫 번째 숫자 입력 |
+| TextBox | `txtNumber2`   | 두 번째 숫자 입력 |
+| Button  | `btnAdd`       | 클릭 시 두 숫자 더함 |
+| Label   | `lblResult`    | 결과 출력 |
+
+## 🧠 핵심 코드
+
+```csharp
+private void btnAdd_Click(object sender, EventArgs e)
+{
+    int num1 = int.Parse(txtNumber1.Text);
+    int num2 = int.Parse(txtNumber2.Text);
+    int sum = num1 + num2;
+
+    lblResult.Text = "결과: " + sum.ToString();
+}
+
+## 🐞 발생한 오류 및 해결 방법
+
+### ❌ 오류 메시지
+
+### 🔍 원인
+- Label 컨트롤(`label1`)에 자동으로 연결된 클릭 이벤트 핸들러(`label1_Click`)가 불필요하게 생성됨
+- 그런데 이 메서드가 잘못 정의되어 있거나, 불필요하게 연결만 되어 있어서 에러 발생
+
+### ✅ 해결 방법
+1. Form 디자인 화면에서 `label1` 선택
+2. 오른쪽 속성 창에서 **⚡(번개 모양)** 클릭 → `Click` 이벤트 항목에서 `label1_Click` 제거
+3. 코드 파일(Form1.cs) 안에 자동 생성된 `label1_Click` 함수도 삭제
+
+### 💡 추가 팁
+- Label 같은 출력 전용 컨트롤에는 Click 이벤트가 필요 없음
+- 앞으로 컨트롤을 클릭해서 이벤트 만들 때 **잘못 만든 이벤트는 바로 제거**하는 습관 들이기!
