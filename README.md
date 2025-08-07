@@ -34,7 +34,13 @@
 - WindowPrograming | 20250806.java   
 - Java | 20250806.java
 
-### 2025.08.06.THU 💻
+### 2025.08.07.THU 💻  
+🧾요약   
+- 리눅스 
+💠 디렉토리 생성 및 이동  
+💠 파일 생성 및 수정  
+💠 파일 이름 변경 및 출력  
+💠 권한 없는 파일 삭제 연습  
 
 ## 🛠 기술 스택
 [보류....]
@@ -44,7 +50,8 @@
 
 ## 👨‍💻 작업 공간  
 - intellij IDEA 2025.2  
-- Visual Studio 2022  
+- Visual Studio 2022
+- Replit
 
 ## 📫 연락처
 - Email: zlorn@naver.com
